@@ -1,0 +1,75 @@
+.ant-spin-nested-loading {
+  height: 100%;
+
+  > div > div.ant-spin {
+    max-height: 100%;
+  }
+
+  .contact-list-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 10rem;
+
+    .contact-header-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .contact-add-new-button-container {
+      padding-bottom: 1rem;
+
+      .ant-typography {
+        margin: 0;
+        width: 75%;
+      }
+    }
+
+    .contact-view-information-button-container {
+      text-align: right;
+
+      .anticon-appstore,
+      .anticon-menu {
+        cursor: pointer;
+      }
+
+      .contact-view-card-outlined {
+        padding-right: 1rem;
+      }
+    }
+
+    .contact-cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 1rem;
+      gap: 1rem;
+
+      .card-details-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .card-button-container {
+          display: flex;
+          gap: 0.5rem;
+
+          .anticon-edit,
+          .anticon-delete {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .ant-card {
+        flex: 1 0 calc(33.333% - 1rem);
+        box-sizing: border-box;
+        width: 18.75rem;
+      }
+    }
+
+    .contact-table-container {
+      padding-top: 1rem;
+    }
+  }
+}
